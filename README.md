@@ -34,6 +34,13 @@ $ npm install -g grunt-cli
   Install:
   
     $ npm install
+     
+    if error: Failed to execute "git ls-remote --tags --heads git://github.com/angular/bower-angular.git", exit code of #128
+    $ git config --global url."https://".insteadOf git://
+    
+    
+    
+
 
   To start the server:
 
