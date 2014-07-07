@@ -1,0 +1,19 @@
+<!--<section data-ng-controller="SettingsController">-->
+<!--<h1>Settings</h1>-->
+<!--</section>-->
+
+<div class="app-content" data-ng-controller="SettingsController">
+
+    <input type="search" class="form-control app-search" placeholder="Search.." />
+
+    <div class="scrollable">
+        <div class="scrollable-content">
+            <div class="list-group">
+                <a ng-repeat="item in scrollItems" href="#" class="list-group-item">
+                    {{ item }} <i class="fa fa-chevron-right pull-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
