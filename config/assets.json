@@ -2,6 +2,7 @@
     "core": {
         "css": {
             "bower_components/build/css/dist.min.css": [
+                "packages/maps/public/assets/css/maps.css"
             ]
         },
         "js": {
@@ -14,7 +15,9 @@
                 "bower_components/angular-ui-router/release/angular-ui-router.js",
                 "bower_components/angular-bootstrap/ui-bootstrap.js",
                 "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
-                "bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js"
+                "bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js",
+                "bower_components/lodash/dist/lodash.underscore.min.js",
+                "bower_components/angular-google-maps/dist/angular-google-maps.min.js"
             ]
         }
     }

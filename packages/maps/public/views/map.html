@@ -1,0 +1,25 @@
+<div class="app-content" data-ng-controller="MapController">
+
+    <google-map center="map.center"
+                zoom="map.zoom"
+                draggable="true">
+
+        <markers models="map.markers" coords="'self'" icon="'icon'" click="'onClicked'"
+                 labelContent="'title'" labelAnchor="22 0" labelClass="marker-labels">
+            <windows show="'showWindow'" closeClick="'closeClick'" ng-cloak>
+                <div style="min-height: 80px">
+
+                    <p ng-non-bindable>This is an info window at
+                        {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
+
+                    <p style="text-align: right" ng-non-bindable>
+                        <a href='/#!/maps/marker/{{id}}' class="btn btn-primary">Info</a>
+
+                    </p>
+                </div>
+            </windows>
+        </markers>
+
+    </google-map>
+
+</div>
