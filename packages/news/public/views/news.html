@@ -1,12 +1,12 @@
-<div class="app-content" data-ng-controller="SettingsController">
+<div class="app-content" data-ng-controller="NewsController">
 
     <input type="search" class="form-control app-search" placeholder="Search.." />
 
     <div class="scrollable">
         <div class="scrollable-content">
             <div class="list-group">
-                <a ng-repeat="item in settingsItems" href="/#!/settings/{{item.name}}" class="list-group-item">
-                    {{ item.title }} <i class="fa fa-chevron-right pull-right"></i>
+                <a ng-repeat="item in newsItems" href="/#!/news/{{item.id}}" class="list-group-item">
+                    {{ item.name }} <i class="fa fa-chevron-right pull-right"></i>
                 </a>
             </div>
         </div>

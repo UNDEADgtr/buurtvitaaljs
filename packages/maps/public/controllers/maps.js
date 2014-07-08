@@ -23,8 +23,6 @@ angular.module('mean.maps').controller('MapsController', ['$scope', '$rootScope'
     .controller('MapController', ['$scope', '$rootScope', '$stateParams',
         function ($scope, $rootScope, $stateParams) {
 
-            console.log($stateParams.mapId);
-
             $scope.map = {
                 center: {
                     latitude: 52.369871,
@@ -80,7 +78,6 @@ angular.module('mean.maps').controller('MapsController', ['$scope', '$rootScope'
         function ($scope, $rootScope, $stateParams) {
 
             $scope.info = $stateParams.markerId;
-
 
         }
     ]);
