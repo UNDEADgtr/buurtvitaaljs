@@ -138,7 +138,7 @@ angular.module('mean.maps').controller('MapsController', ['$scope', '$rootScope'
                 events: {
                     click: function (mapModel, eventName, originalEventArgs) {
                         // 'this' is the directive's scope
-                        $log.log("user defined event: " + eventName, mapModel, originalEventArgs);
+                        $log.log('user defined event: ' + eventName, mapModel, originalEventArgs);
 
                         var e = originalEventArgs[0];
 
